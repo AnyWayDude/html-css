@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/246cd4d0a6.js" crossorigin="anonymous"></script>
+    <title>Rick&Morty Live</title>
+</head>
+<body>
+    <header class="header">
+          <div class="header__block">
+            <div class="logo_block">
+                <img class="logo_photo" src="photo/PhotoLogo.png" alt="Rick and Morty" id="side-2">
+                <img class="logo_photo" src="photo/RickAndMortyLogo.png" alt="Rick and Morty">
+            </div>
+            <div>
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchTerm">
+                    <button class="searchButton" type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
+                    <span type="submit"><i class="fa-solid fa-microphone fa-2x"></i></span>
+                </div>
+            </div>
+            <div> 
+                <span type="submit"><i class="fa-solid fa-bell fa-2x"></i></span>
+                <label class="drop">
+                    <span class="menu__button"><i class="fa-solid fa-meteor fa-2x"></i></span>
+                    <input type="checkbox" class="dropdown__input">
+                    <label class="drop__reg">
+                        <div class="drop__menu">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                            Overseer's Profile
+                        </div>
+                        <div class="drop__menu">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                            Settings
+                        </div>
+                        <div class="divide"></div>
+                        <div class="drop__menu">
+                            <i class="fa-solid fa-person-through-window"></i>
+                            Log Out
+                        </div>
+                </label>
+            </div>
+          </div>
+      </div>
+    </header>
+    <main>
+        <div class="main__container">
+            <div>
+                <div class="live__users">
+                <div class="streamers__block">
+                   <div class="users">
+                    <div class="img"><img src="./photo/cuke-ava.png" alt="avatar"></div>
+                    <div class="name__view" id="side">
+                        <div><a href="#link">Pickle Rick</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">8.3K</span>
+                          </div>
+                       </div>
+                    </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/morty-ava.png" alt="avatar"></div>
+                    <div class="name__view" id="side">
+                        <div ><a href="#link">Morty</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">457</span>
+                          </div>
+                       </div>
+                    </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/rick-ava.png" alt="avatar"></div>
+                    <div class="name__view" id="side">
+                        <div><a href="#link">Rick C-137</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">1.2K</span>
+                          </div>
+                       </div>
+                    </div> 
+                   <div class="users">
+                    <div class="img"><img src="./photo/mortynana-ava.png" alt="avatar"></div>
+                    <div class="name__view" id="side">
+                        <div><a href="#link">MortyBnn</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">8.3K</span>
+                          </div>
+                       </div>
+                    </div> 
+                   <div class="users">
+                    <div class="img"><img src="./photo/bighead-ava.png" alt="avatar"></div>
+                       <div class="name__view" id="side">
+                        <div><a href="#link">Huge Head</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">37.1K</span>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/poopy-ava.png" alt="avatar"></div>
+                       <div class="name__view" id="side">
+                        <div><a href="#link">Mr.Poopybutthole</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">1.4K</span>
+                          </div>
+                       </div>
+                   </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/morningsun-ava.png" alt="avatar"></div>
+                       
+                       <div class="name__view" id="side">
+                        <div><a href="#link">Morning Sun</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">2.2K</span>
+                           </div>
+                        </div>
+                   </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/Squanchy-ava.png" alt="avatar"></div>
+                       <div class="name__view" id="side">
+                        <div><a href="#link">Squanchy</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">7.6K</span>
+                           </div>
+                        </div>
+                   </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/avradolf-ava.png" alt="avatar"></div>
+                    <div class="name__view" id="side">
+                        <div><a href="#link">Abradolf Lincler</a></div>
+                          <div class="watching">
+                            <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                            <span class="viewers__num">12</span>
+                           </div>
+                        </div>
+                   </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/summer-ava.jpg" alt="avatar"></div>
+                         <div class="name__view" id="side">
+                           <div><a href="#link">Summer Smith</a></div>
+                             <div class="watching">
+                              <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                               <span class="viewers__num">4k</span>
+                             </div>
+                          </div>
+                    </div>
+                   <div class="users">
+                    <div class="img"><img src="./photo/saitama-ava.png" alt="avatar"></div>
+                         <div class="name__view" id="side">
+                           <div><a href="#link">埼玉</a></div>
+                             <div class="watching">
+                              <div><i class="fa-solid fa-circle fa-2xs fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.2;"></i></div>
+                               <span class="viewers__num">123M</span>
+                             </div>
+                          </div>
+                    </div>
+             </div>
+                <div class="community__block" id="side">
+                    <div class="info__block">
+                        <span>Join to the Universe С-137</span>
+                        <div class="info__icon">
+                            <div><i class="fa-brands fa-instagram-square fa-xl"></i></div>
+                            <div><i class="fa-brands fa-facebook-square fa-xl"></i></div>
+                            <div><i class="fa-brands fa-twitter-square fa-xl"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+            <div class="main__content">
+                <div class="genre__container">
+                  <div class="genre__box">
+                    <span class="genre">All</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Planets</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Ai</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Adventure</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Race</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Talk</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Music</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Space</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Universe</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">UFO</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">robots</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">cloning</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Nuclear</span>
+                  </div>
+                  <div class="genre__box">
+                    <span class="genre">Worlds</span>
+                  </div>
+                </div>
+              
+            <div class="carousel__block">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <input type="radio" name="slider" id="item-4">
+                <input type="radio" name="slider" id="item-5">
+              <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                  <img src="./photo/carousel-photo.jpg" alt="streamer">
+                  <div class="overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="card__info">
+                    <div class="users">
+                      <div class="img"><img src="./photo/poopy-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Mr.Poopy butthole</a></div>
+                   </div>
+               </div>
+               <span>Time with family</span>
+                  </div>
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                  <img src="./photo/carousel-rick.jpg" alt="streamer">
+                  <div class="overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="card__info">
+                    <div class="users">
+                      <div class="img"><img src="./photo/morningsun-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Morning Sun</a></div>
+                   </div>
+               </div>
+               <span>Screaming 42 hours</span> 
+                  </div>
+                </label>
+                <label class="card" for="item-5" id="song-5">
+                  <img src="./photo/carousel-sim.jpg" alt="streamer">
+                  <div class="overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="card__info">
+                    <div class="users">
+                      <div class="img"><img src="./photo/rick-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Rick C-137</a></div>
+                      </div>
+                    </div>
+               <span>oops. Morty, turn it off</span> 
+                  </div>
+                </label>
+                <label class="card" for="item-4" id="song-4">
+                  <img src="./photo/carousel-morty.jpg" alt="streamer">
+                  <div class="overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="card__info">
+                    <div class="users">
+                      <div class="img"><img src="./photo/morty-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Morty</a></div>
+                   </div>
+               </div>
+               <span>Preparing the drug "V"</span> 
+                  </div>
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                  <img src="./photo/carousel-pickle.jpg" alt="streamer">
+                  <div class="overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="card__info">
+                      <div class="users">
+                         <div class="img"><img src="./photo/cuke-ava.png" alt="avatar"></div>
+                         <div class="name__view">
+                           <div><a href="#link">Pickle Rick</a></div>
+                      </div>
+                  </div>
+                  <span> Fear the rat, I've come for you</span> 
+                </label>
+              </div>
+              </div>
+            </div>
+            <div class="video__container">
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/ick-vid.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="live">
+                    <span>live</span>
+                  </div>
+                  <div class="viewers">
+                    <span>18k viewers</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/rick-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Rick C-137</a></div>
+                        He must grow up. Even if so...
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <div></div>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/head-vid.png" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="live">
+                    <span>live</span>
+                  </div>
+                  <div class="viewers">
+                    <span>443 viewers</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/bighead-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Huge Head</a></div>
+                        Listen "Get Schwifty". I like
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/funny-vod.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="viewers">
+                    <span>37:12</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/rick-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Rick C-137</a></div>
+                        I love adventures with my grandson
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/squa-vid.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="viewers">
+                    <span>56:20</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/Squanchy-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Squanchy</a></div>
+                        If you see this, then I'm already dead.
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+                <div></div>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/punch-vid.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="live">
+                    <span>live</span>
+                  </div>
+                  <div class="viewers">
+                    <span> viewers</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/saitama-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Saitama</a></div>
+                        Why is it always just one Punch?
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/abradilf-vid.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="live">
+                    <span>live</span>
+                  </div>
+                  <div class="viewers">
+                    <span>12 viewers</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/avradolf-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Abradolf</a></div>
+                        I'm against parties. This is the end
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/sister-vid.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="viewers">
+                    <span>44:38</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/morty-ava.png" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Morty</a></div>
+                        Summer Breaking Bad, save her.
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="video__grid">
+                <figure>
+                  <img class="img__video" src="./photo/muscle-vid.jpg" alt="avatar">
+                  <div class="overlay second__overlay">
+                    <a href="#" class="icon" title="User Profile">
+                      <i class="fa-solid fa-eye"></i>
+                    </a>
+                  </div>
+                  <div class="live">
+                    <span>live</span>
+                  </div>
+                  <div class="viewers">
+                    <span>4k viewers</span>
+                  </div>
+                  <figcaption>
+                    <div class="users">
+                      <div class="img"><img src="./photo/summer-ava.jpg" alt="avatar"></div>
+                      <div class="name__view">
+                        <div><a href="#link">Summer Smith</a></div>
+                        Grandpa's protein is a cool thing!
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="footer">Created by me</div>
+        </div>
+    </main>
+    
+</body>
+</html>
