@@ -2,6 +2,11 @@ body {
 width: 100%;
 height: 100%;
 }
+
+::selection {
+    background: #e8ff3ba3;
+    }
+
 ul li::marker {
     color: red;
     font-size: 1.5em;
